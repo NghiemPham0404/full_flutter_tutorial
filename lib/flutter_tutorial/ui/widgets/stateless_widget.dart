@@ -15,6 +15,7 @@ void main(){
   );
 }
 
+// ignore: must_be_immutable
 class MyWidget extends StatelessWidget{
 
   bool loading;

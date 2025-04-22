@@ -19,11 +19,12 @@ void main(){
   );
 }
 
+// ignore: must_be_immutable
 class MyWidget extends StatefulWidget{
   
   bool loading;
 
-  MyWidget(this.loading);
+  MyWidget(this.loading, {super.key});
 
   @override
   State<StatefulWidget> createState() {
@@ -53,6 +54,6 @@ class MyWidgetState extends State<MyWidget>{
       _isLoading = true;
     });
 
-    print("click ${_isLoading}");
+    print("click $_isLoading");
   }  
 }

@@ -21,6 +21,7 @@ void main() {
   print(d.runtimeType);
 
   //todo : disable nullable validation
+  // ignore: unused_local_variable
   int? e;
 
   // todo : data type convert
