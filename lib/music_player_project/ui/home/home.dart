@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:full_flutter_tutorial/music_player_project/data/model/song.dart';
 import 'package:full_flutter_tutorial/music_player_project/ui/discovery/discovery.dart';
 import 'package:full_flutter_tutorial/music_player_project/ui/home/viewmodel.dart';
+import 'package:full_flutter_tutorial/music_player_project/ui/now_playing/audio_player_manager.dart';
 import 'package:full_flutter_tutorial/music_player_project/ui/now_playing/playing.dart';
 import 'package:full_flutter_tutorial/music_player_project/ui/settings/settings.dart';
 import 'package:full_flutter_tutorial/music_player_project/ui/user/user.dart';
+import 'package:just_audio/just_audio.dart';
 
 /**
  * our main app
@@ -127,6 +129,7 @@ class _HomeTabPageState extends State<HomeTabPage>{
   @override
   void dispose(){
     _viewModel.songStream.close();
+    AudioPlayerManager().dispose();
     super.dispose();
   }
 
