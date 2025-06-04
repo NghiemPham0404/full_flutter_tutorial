@@ -16,3 +16,4 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 json data link : https://thantrieu.com/resources/braniumapis/songs.json
+circle avatar image link : "https://api.dicebear.com/9.x/initials/png?seed="+username+"&backgroundType=gradientLinear"
