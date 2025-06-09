@@ -300,6 +300,7 @@ class _NowPlayingPagetState extends State<NowPlayingPage> with SingleTickerProvi
         LoopMode.off => Icons.repeat,
         LoopMode.one => Icons.repeat_one,
         LoopMode.all => Icons.repeat_on,
+        // ignore: unreachable_switch_case
         _ => Icons.repeat
     };
   }
